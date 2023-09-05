@@ -23,6 +23,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "@rocketseat/eslint-config": "^2.1.0"
+    "@rocketseat/eslint-config": "^2.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.4"
   }
 }
