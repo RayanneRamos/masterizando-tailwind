@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Cog, LifeBuoy, Search } from "lucide-react";
 import { Logo } from "./Logo";
 import { MainNavigator } from "./MainNavigation";
