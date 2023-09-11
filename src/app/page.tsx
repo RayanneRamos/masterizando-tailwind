@@ -5,6 +5,7 @@ import { SettingsTabs } from "@/components/SettingsTabs";
 import * as FileInput from "../components/Form/FileInput";
 import { Mail } from "lucide-react";
 import { Select } from "@/components/Form/Select";
+import { SelectItem } from "@/components/Form/Select/SelectItem";
 export default function Home() {
   return (
     <>
@@ -106,7 +107,11 @@ export default function Home() {
               Country
             </label>
 
-            <Select />
+            <Select placeholder="Select a country...">
+              <SelectItem value="br" text="Brazil" />
+              <SelectItem value="us" text="United States" />
+              <SelectItem value="fr" text="France" />
+            </Select>
           </div>
           <div className="grid grid-cols-form gap-3 pt-5">
             <label
@@ -116,7 +121,13 @@ export default function Home() {
               Timezone
             </label>
 
-            <div></div>
+            <Select placeholder="Select a timezone...">
+              <SelectItem
+                value="utc8"
+                text="Pacific Standart Time (UTC-08:00)"
+              />
+              <SelectItem value="utc3" text="América São Paulo (UTC-03:00)" />
+            </Select>
           </div>
           <div className="grid grid-cols-form gap-3 pt-5">
             <label htmlFor="bio" className="text-sm font-medium text-zinc-700">
