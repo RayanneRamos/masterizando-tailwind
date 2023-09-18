@@ -1,6 +1,7 @@
+/* eslint-disable prettier/prettier */
 export function Logo() {
   return (
-    <strong className="mx-1 flex items-center gap-2 text-xl font-semibold text-zinc-900">
+    <strong className="mx-1 flex items-center gap-2 text-xl font-semibold text-zinc-900 dark:text-zinc-100">
       <svg
         width={38}
         height={38}
@@ -205,5 +206,5 @@ export function Logo() {
       </svg>
       <span>Untitled UI</span>
     </strong>
-  )
+  );
 }
