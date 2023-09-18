@@ -49,7 +49,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
   $ yarn start
 ```
 
-Abra http://localhost:5173 no seu navegador para ver a aplicação rodando!
+Abra http://localhost:3000 no seu navegador para ver a aplicação rodando!
 
 ## 🔖 Layout
 
