@@ -1,34 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align='center'>Untitled UI</h1>
 
-## Getting Started
+<p align='center'>
+  <img src='https://github.com/RayanneRamos/upload-ai-web/assets/43352880/d58bd012-a24f-4439-b2be-643cc5213c19' alt='Untitled UI' />
+</p>
 
-First, run the development server:
+<p  align='center'>
+  <img src='https://img.shields.io/badge/license-MIT-%23835afd' alt='License' />
+  <img src='https://img.shields.io/badge/forks-MIT-%23835afd' alt='Forks' />
+  <img src='https://img.shields.io/badge/stars-MIT-%23835afd' alt='Stars' />
+</p>
+
+<br>
+
+## 💻 Projeto
+
+[UntitledUI](https://masterizando-tailwind-8s6w15ode-rayanneramos.vercel.app/) é o projeto de um curso desenvolvido durante o bootcamp ignite da [Rocketseat](https://www.rocketseat.com.br/) que foca nas tecnologias ReactJS, React Native e NodeJS. O projeto é focado em aprender sobre as estilizações com o TailwindCSS de como ele é produtivo usado em projetos reais e nesse curso o foco foi desenvolver a página My Details de um dashboard completo utilizando o TailwindCSS.
+
+## 🧪 Technologies
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [NextJS](https://nextjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Auto Animate](https://auto-animate.formkit.com/)
+- [Radix-ui/collapsible](https://www.radix-ui.com/primitives/docs/components/collapsible)
+- [Radix-ui/scroll-area](https://www.radix-ui.com/primitives/docs/components/scroll-area)
+- [Radix-ui/select](https://www.radix-ui.com/primitives/docs/components/select)
+- [Radix-ui/tabs](https://www.radix-ui.com/primitives/docs/components/tabs)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Lucide React](https://lucide.dev/)
+- [Tailwind Merge](https://github.com/dcastil/tailwind-merge)
+- [Tailwind Variants](https://www.tailwind-variants.org/)
+
+## 🚀 Instalação
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  # Clone o repositório e entre na pasta do projeto
+  $ git clone https://github.com/RayanneRamos/masterizando-tailwind.git
+  $ cd masterizando-tailwind
+  # Instale as dependências
+  $ npm install
+  # ou
+  $ yarn install
+  # Execute a aplicação
+  $ npm run dev
+  # ou
+  $ yarn start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra http://localhost:5173 no seu navegador para ver a aplicação rodando!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔖 Layout
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Layout Web](https://www.figma.com/file/MU3H8HfTxX32ukt8ANpan7/Ignite-Tailwind?type=design&node-id=0%3A1&mode=design&t=4IHrWKC5QUKH2UN8-1)
 
-## Learn More
+## 📝 License
 
-To learn more about Next.js, take a look at the following resources:
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para obter mais detalhes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p align='center'>Criado by Rayanne Ramos</p>
