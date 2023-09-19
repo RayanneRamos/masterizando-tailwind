@@ -7,6 +7,7 @@ import { Button } from "@/components/Button";
 import { SettingsTabs } from "./SettingsTabs";
 import { CountrySelect } from "./CountrySelect";
 import { Textarea } from "@/components/Form/Textarea";
+import { TimezonesSelect } from "./TimezoneSelect";
 
 export default function Home() {
   return (
@@ -127,11 +128,7 @@ export default function Home() {
               Timezone
             </label>
 
-            <Select.Root name="timezone">
-              <Select.Trigger>
-                <Select.Value placeholder="Select your timezone..." />
-              </Select.Trigger>
-            </Select.Root>
+            <TimezonesSelect />
           </div>
           <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
             <label
