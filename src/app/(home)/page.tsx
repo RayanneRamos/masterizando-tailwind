@@ -1,13 +1,13 @@
 /* eslint-disable prettier/prettier */
-import { InputControl, InputPrefix, InputRoot } from "@/components/Input";
-import { SettingsTabs } from "@/components/SettingsTabs";
-
-import * as FileInput from "../components/Form/FileInput";
+import * as Input from "@/components/Form/Input";
+import * as FileInput from "@/components/Form/FileInput";
+import * as Select from "@/components/Form/Select";
 import { Bold, Italic, Link, List, ListOrdered, Mail } from "lucide-react";
-import { Select } from "@/components/Form/Select";
-import { SelectItem } from "@/components/Form/Select/SelectItem";
-import { Textarea } from "@/components/Form/Textarea";
 import { Button } from "@/components/Button";
+import { SettingsTabs } from "./SettingsTabs";
+import { CountrySelect } from "./CountrySelect";
+import { Textarea } from "@/components/Form/Textarea";
+
 export default function Home() {
   return (
     <>
@@ -46,9 +46,9 @@ export default function Home() {
               Name
             </label>
             <div className="flex flex-col gap-6 lg:grid lg:grid-cols-2">
-              <InputRoot>
-                <InputControl defaultValue="Rayanne" id="firstname" />
-              </InputRoot>
+              <Input.Root>
+                <Input.Control defaultValue="Rayanne" id="firstname" />
+              </Input.Root>
               <div className="flex flex-col gap-3 lg:block">
                 <label
                   htmlFor="lastname"
@@ -56,9 +56,9 @@ export default function Home() {
                 >
                   Last name
                 </label>
-                <InputRoot>
-                  <InputControl defaultValue="Ramos" id="lastname" />
-                </InputRoot>
+                <Input.Root>
+                  <Input.Control defaultValue="Ramos" id="lastname" />
+                </Input.Root>
               </div>
             </div>
           </div>
@@ -70,16 +70,16 @@ export default function Home() {
               Email address
             </label>
 
-            <InputRoot>
-              <InputPrefix>
+            <Input.Root>
+              <Input.Prefix>
                 <Mail className="h-5 w-5 text-zinc-500" />
-              </InputPrefix>
-              <InputControl
+              </Input.Prefix>
+              <Input.Control
                 defaultValue="rayanneramos@gmail.com"
                 type="email"
                 id="email"
               />
-            </InputRoot>
+            </Input.Root>
           </div>
           <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
             <label
@@ -105,9 +105,9 @@ export default function Home() {
               Role
             </label>
 
-            <InputRoot>
-              <InputControl defaultValue="CTO" id="role" />
-            </InputRoot>
+            <Input.Root>
+              <Input.Control defaultValue="CTO" id="role" />
+            </Input.Root>
           </div>
           <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
             <label
@@ -117,11 +117,7 @@ export default function Home() {
               Country
             </label>
 
-            <Select placeholder="Select a country...">
-              <SelectItem value="br" text="Brazil" />
-              <SelectItem value="us" text="United States" />
-              <SelectItem value="fr" text="France" />
-            </Select>
+            <CountrySelect />
           </div>
           <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
             <label
@@ -131,13 +127,11 @@ export default function Home() {
               Timezone
             </label>
 
-            <Select placeholder="Select a timezone...">
-              <SelectItem
-                value="utc8"
-                text="Pacific Standart Time (UTC-08:00)"
-              />
-              <SelectItem value="utc3" text="América São Paulo (UTC-03:00)" />
-            </Select>
+            <Select.Root name="timezone">
+              <Select.Trigger>
+                <Select.Value placeholder="Select your timezone..." />
+              </Select.Trigger>
+            </Select.Root>
           </div>
           <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
             <label
@@ -152,10 +146,19 @@ export default function Home() {
 
             <div className="space-y-3">
               <div className="flex flex-col gap-3 lg:grid lg:grid-cols-2">
-                <Select placeholder="" defaultValue="normal">
-                  <SelectItem value="normal" text="Normal Text" />
-                  <SelectItem value="md" text="Markdown" />
-                </Select>
+                <Select.Root defaultValue="normal">
+                  <Select.Trigger>
+                    <Select.Value />
+                  </Select.Trigger>
+                  <Select.Content>
+                    <Select.Item value="normal">
+                      <Select.ItemText>Normal text</Select.ItemText>
+                    </Select.Item>
+                    <Select.Item value="md">
+                      <Select.ItemText>Markdown</Select.ItemText>
+                    </Select.Item>
+                  </Select.Content>
+                </Select.Root>
                 <div className="flex items-center gap-1">
                   <Button type="button" variant="ghost">
                     <Bold className="h-4 w-4 text-zinc-500" strokeWidth={3} />
