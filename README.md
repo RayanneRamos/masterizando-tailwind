@@ -16,7 +16,13 @@
 
 [UntitledUI](https://masterizando-tailwind-8s6w15ode-rayanneramos.vercel.app/) é o projeto de um curso desenvolvido durante o bootcamp ignite da [Rocketseat](https://www.rocketseat.com.br/) que foca nas tecnologias ReactJS, React Native e NodeJS. O projeto é focado em aprender sobre as estilizações com o TailwindCSS de como ele é produtivo usado em projetos reais e nesse curso o foco foi desenvolver a página My Details de um dashboard completo utilizando o TailwindCSS.
 
-## 🧪 Technologies
+## 🌟 Funcionalidades
+
+1. **Dashboard**: Interface de dashboard contendo informações do usuário e funcionalidades para visualização e edição de dados. 
+2. **TailwindCSS**: Utilização do TailwindCSS para estilização do layout, aproveitando a produtividade e flexibilidade da ferramenta. 
+3. **Design Responsivo**: Layout otimizado para diferentes tamanhos de tela, garantindo boa experiência tanto no desktop quanto em dispositivos móveis.
+
+## 🧪 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
